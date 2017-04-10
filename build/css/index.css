@@ -1,0 +1,83 @@
+.ta-l {
+  text-align: left;
+}
+.ta-c {
+  text-align: center;
+}
+.ta-r {
+  text-align: right;
+}
+.d-b {
+  display: block;
+}
+.d-ib {
+  display: inline-block;
+}
+.p-a {
+  position: absolute;
+}
+.p-r {
+  position: relative;
+}
+.p-f {
+  position: fixed;
+}
+.head {
+  color: #000;
+  background-color: #B7B7B7;
+  font-size: 0.34666667rem;
+  height: 0.42666667rem;
+  line-height: 0.42666667rem;
+  padding: 5px;
+}
+.head .logo {
+  width: 1.06666667rem;
+}
+.foot {
+  color: #000;
+  background-color: #B7B7B7;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  font-size: 0.13333333rem;
+  line-height: 15px;
+  text-align: center;
+}
+.main-wrap {
+  width: 5.33333333rem;
+  margin: 0 auto;
+}
+.main-wrap .employee-list {
+  padding: 0;
+  margin: 10px auto;
+  list-style-type: none;
+}
+.main-wrap .employee-list .employee-item {
+  border: 1px solid black;
+  padding: 0;
+  margin: 0;
+}
+.main-wrap .employee-list .employee-item .ex-title {
+  font-size: 0.4rem;
+  background-color: black;
+  color: white;
+  padding: .1em .3em;
+  cursor: pointer;
+}
+.main-wrap .employee-list .employee-item .ex-body {
+  font-size: 0.26666667rem;
+  padding: .1em .3em;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Lato, helvetica, sans-serif;
+}
+body {
+  font-size: 0.42666667rem;
+}

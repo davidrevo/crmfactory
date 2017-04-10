@@ -1,0 +1,48 @@
+@import 'property.less';
+@import 'template/head.less';
+@import 'template/foot.less';
+@import 'template/employee-list.less';
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Lato, helvetica, sans-serif;
+}
+
+.fs(@px) {
+  font-size: unit(@px / 37.5, rem);
+}
+
+.w(@px) {
+  width: unit(@px / 37.5, rem);
+}
+
+.h(@px) {
+  height: unit(@px / 37.5, rem);
+}
+
+.lh(@px) {
+  line-height: unit(@px / 37.5, rem);
+}
+
+.m-t(@px) {
+  margin-top: unit(@px / 37.5, rem);
+}
+
+.m-b(@px) {
+  margin-bottom: unit(@px / 37.5, rem);
+}
+
+.m-l(@px) {
+  margin-left: unit(@px / 37.5, rem);
+}
+
+.m-r(@px) {
+  margin-right: unit(@px / 37.5, rem);
+}
+
+body {
+  .fs(16);
+}

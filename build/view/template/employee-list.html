@@ -1,0 +1,9 @@
+<div class="main-wrap">
+  <ul class="employee-list">
+    <div accordion>
+      <div expander class="employee-item ta-c" ng-repeat="expander in expanders" expander-title="expander.name">
+          <p ng-bind="expander.bio" ng-click="msg(expander)"></p>
+      </div>
+    </div>
+  </ul>
+</div>
