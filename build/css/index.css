@@ -70,6 +70,9 @@
   font-size: 0.26666667rem;
   padding: .1em .3em;
 }
+.main-wrap .employee-list .employee-item .ex-body:hover {
+  background-color: #d1e5ff;
+}
 html,
 body {
   height: 100%;
