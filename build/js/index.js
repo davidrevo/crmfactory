@@ -2,6 +2,11 @@
 
 angular.module('crmf', ['ui.router']);
 
+/* For test purpose */
+function reverse(name){
+    return name.split("").reverse().join("");
+}
+
 'use strict';
 
 angular.module('crmf').config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){

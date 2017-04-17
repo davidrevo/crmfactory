@@ -5,6 +5,8 @@ angular.module('crmf').controller('entryCtrl', ['$q', '$http', '$scope', functio
     alert(expander.popmsg);
   };
 
+  $scope.hello = "Hello World";
+
   var def = $q.defer();
   $http.get('/data/employee.json')
   .success(function(resp){
