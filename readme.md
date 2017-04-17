@@ -22,4 +22,16 @@ Notes:
 - "gulp clean" command can remove "build" & "dist" directories
 - "src" is where source code written, "build" is development environment folder while "dist" is distribution environment folder
 
-https://github.com/davidrevo/crmfactory/tree/master/build/vendor
+-----------------
+Test Module (Karma + Jasmine)
+
+Unit testing cases are added under "test" folder
+- "test/testCase1.spec.js" test case is to verify a reverse function defined in "src/script/reverseFunc.js"
+- "test/employeeCtrl.spec.js" is to test employee list controller
+- coverage report is under "test/coverage" folder
+
+Testing Tips:
+
+- Need to install karma command line plugin by "npm install -g karma-cli"
+- run "karma start" to begin unit testing
+- karma configuration file is located in "/karma.conf.js"

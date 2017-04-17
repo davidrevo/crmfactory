@@ -5,7 +5,7 @@ describe("Get Employee JSON Data Test", function(){
     scope = $rootScope.$new();
     employeeController = $controller('entryCtrl', {$scope: scope});
   }));
-  it('CRMF already fetched employee list from backend', function(){
-    expect(scope.hello).toEqual('Hello world!');
+  it('Controller Page Title Test', function(){
+    expect(scope.title).toEqual('CRM Factory');
   });
 });

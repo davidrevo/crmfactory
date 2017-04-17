@@ -10,7 +10,7 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['jasmine', 'browserify'],
+    frameworks: ['jasmine'],
 
 
     // list of files / patterns to load in the browser
@@ -19,8 +19,8 @@ module.exports = function(config) {
       'bower_components/angular-ui-router/release/angular-ui-router.min.js',
       'bower_components/angular-mocks/angular-mocks.js',
       'src/**/*.js',
-      'build/**/*.js',
-      'dist/**/*.js',
+      // 'build/**/*.js',
+      // 'dist/**/*.js',
       'test/**/*.spec.js'
     ],
 
@@ -35,16 +35,21 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'build/**/*.js': ['browserify'],
-      'dist/**/*.js': ['browserify'],
+      // 'build/**/*.js': ['browserify'],
+      // 'dist/**/*.js': ['browserify'],
+      'test/**/*.spec.js':'coverage'
     },
 
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
+    reporters: ['progress', 'coverage'],
 
+    coverageReporter: {
+      type: 'html',
+      dir: 'test/coverage/'
+    },
 
     // web server port
     port: 9876,
