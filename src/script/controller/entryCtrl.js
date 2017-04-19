@@ -5,7 +5,7 @@ angular.module('crmf').controller('entryCtrl', ['$q', '$http', '$scope', functio
     alert(expander.popmsg);
   };
 
-  $scope.hello = "Hello World";
+  $scope.title = "CRM Factory";
 
   var def = $q.defer();
   $http.get('/data/employee.json')
